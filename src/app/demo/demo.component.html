@@ -1,0 +1,29 @@
+<!--<input type="number" [(ngModel)]="no1"> <br>
+<input type="number" [(ngModel)]="no2"> <br>
+<button (click)="onClick()"> Add</button> <br>
+
+<h1> {{total}} </h1>
+
+<ul>
+<li *ngFor="let item of arr"> {{item}} </li>
+
+
+</ul>    -->
+<input type="text" [(ngModel)]="pid"> <br>
+<input type="text" [(ngModel)]="pname"> <br>
+<input type="number" [(ngModel)]="pprice"> <br>
+<input type="text" [(ngModel)]="pimg"> <br>
+<input type="number" [(ngModel)]="soh"> <br>
+<button (click)="onAdd()"> Add </button>
+
+
+<table>
+<tr *ngFor="let item of arr">
+<td> {{item.pid}} </td>
+<td> {{item.pname}} </td>
+<td> {{item.pprice}} </td>
+<td> <img src="{{item.pimg}}" height="150" width="150"> </td>
+<td> {{item.soh}} </td>
+<td> <button (click)="onDelete(item)"> Delete </button> </td>
+</tr>    
+</table>
